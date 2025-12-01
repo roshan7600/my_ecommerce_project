@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up - patel eCommerce</title>
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="signin.html">SIGN IN</a>
+            <a href="signup.html" class="active-auth">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img
+              src="./public/images/log.png"
+              alt="thapa eCommerce logo"
+              class="logo"
+              width="80%"
+              height="auto"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-auth">
+        <div class="container">
+          <div class="auth-wrapper">
+            <div class="auth-card">
+              <h1>Create Account</h1>
+              <p class="auth-subtitle">Join us and start shopping today</p>
+
+              <form id="signUpForm" class="auth-form">
+                <div class="form-group">
+                  <label for="signup-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="signup-name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                  <small id="name-error" class="error-msg"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="signup-email">Email Address</label>
+                  <input
+                    type="email"
+                    id="signup-email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <small id="signup-email-error" class="error-msg"></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="signup-password">Password</label>
+                  <input
+                    type="password"
+                    id="signup-password"
+                    name="password"
+                    placeholder="Create a password (min 8 characters)"
+                    required
+                  />
+                  <small id="signup-password-error" class="error-msg"></small>
+                  <div class="password-strength">
+                    <div class="strength-bar"></div>
+                    <span class="strength-text">Password strength</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="signup-confirm">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="signup-confirm"
+                    name="confirm"
+                    placeholder="Confirm your password"
+                    required
+                  />
+                  <small id="confirm-error" class="error-msg"></small>
+                </div>
+
+                <div class="form-group checkbox">
+                  <input type="checkbox" id="terms" name="terms" required />
+                  <label for="terms">
+                    I agree to the
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                  </label>
+                  <small id="terms-error" class="error-msg"></small>
+                </div>
+
+                <button type="submit" class="auth-btn">Create Account</button>
+              </form>
+
+              <div class="auth-divider">OR</div>
+
+              <button class="social-btn google-btn">
+                <i class="fab fa-google"></i> Sign up with Google
+              </button>
+
+              <p class="auth-footer">
+                Already have an account?
+                <a href="signin.html">Sign in here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="container">
+        <p>&copy; 2024 Thapa eCommerce. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>
