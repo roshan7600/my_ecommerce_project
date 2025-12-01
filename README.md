@@ -69,6 +69,7 @@ Your project will run at:
 
 👉 http://localhost:5173
 
+
 🏗️ Build for Production
 npm run build
 
@@ -97,6 +98,10 @@ Product search & filters
 Roshan Patel
 Frontend Developer | JavaScript Enthusiast
 🌐 Feel free to explore, fork, and share feedback!
+
+## Deployement link 
+
+👉 https://quickshop-js.vercel.app
 
 ## ⭐ Support
 
